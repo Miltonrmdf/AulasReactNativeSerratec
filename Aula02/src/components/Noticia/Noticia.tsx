@@ -1,17 +1,21 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 type Noticia = {
     titulo: string;
     descricao: string;
     autor: string;
+    imagem: string;
 };
 
-export const Noticia = ({ titulo, descricao, autor }: Noticia) => {
+export const Noticia = ({ imagem, titulo, descricao, autor }: Noticia) => {
     return(
         <View style={styles.quadroNotica}>
+            <Image style={styles.imagem} source={{uri:imagem}} />
             <Text style={styles.tituloNoticia}>{titulo}</Text>
             <Text style={styles.descricacaoNoticia}>{descricao}</Text>
             <Text style={styles.autorNoticia}>{autor}</Text>
+            
+
         </View>   
         )
 }
@@ -39,6 +43,10 @@ const styles = StyleSheet.create({
     autorNoticia:{
         fontSize:15,
         color:"cyan"
-    }
+    },
 
+    imagem:{
+        width:300, 
+        height:200
+    }
 })
