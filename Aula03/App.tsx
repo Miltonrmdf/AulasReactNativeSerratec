@@ -9,7 +9,8 @@ import { Ex2 } from './src/components/Ex2';
 import { Ex3 } from './src/components/Ex3';
 import { Ex4 } from './src/components/Ex4';
 import { Ex5 } from './src/components/Ex5';
-import { Ex6 } from './src/components/Ex6'
+import { Ex6 } from './src/components/Ex6';
+import { Desafio } from './src/components/Desafio';
 
 export default function App() {
   return (
@@ -22,7 +23,8 @@ export default function App() {
     //<Ex3/>
     //<Ex4/>
     //<Ex5/>
-    <Ex6/>
+    //<Ex6/>
+    <Desafio/>
   );
 }
 
